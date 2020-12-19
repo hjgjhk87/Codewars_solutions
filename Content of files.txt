@@ -1,0 +1,8 @@
+
+
+File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions of the next kata:
+	[ Code Golf ] Remove duplicated nodes, 6 kyu.
+	Find the first non-consecutive number, 8 kyu.
+	Split Strings, 6 kyu.
+	Stop gninnipS My sdroW!, 6 kyu.
+	Count by X, 8 kyu.
