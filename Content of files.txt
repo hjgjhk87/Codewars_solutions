@@ -8,3 +8,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	Count by X, 8 kyu.
 	Thinking & Testing : Uniq or not Uniq, 7 kyu.
 	Thinking & Testing : Incomplete string, 7 kyu.
+	Thinking & Testing : True or False, 7 kyu.
+	Thinking & Testing: A and B?, 7 kyu.
+	
