@@ -10,4 +10,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	Thinking & Testing : Incomplete string, 7 kyu.
 	Thinking & Testing : True or False, 7 kyu.
 	Thinking & Testing: A and B?, 7 kyu.
-	
+	Thinking & Testing: Something capitalized, 7 kyu.
+	Thinking & Testing : Math of Primary School, 7 kyu.
+	Thinking & Testing : Math of Middle school, 7 kyu, not finished.
