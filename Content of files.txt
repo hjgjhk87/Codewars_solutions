@@ -14,3 +14,4 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	Thinking & Testing : Math of Primary School, 7 kyu.
 	Thinking & Testing : Math of Middle school, 7 kyu, not finished.
 	String incrementer, 5 kyu.
+	Human Readable Time, 5 kyu.
