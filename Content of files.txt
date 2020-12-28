@@ -17,3 +17,4 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	Human Readable Time, 5 kyu.
 	Merged String Checker, 5 kyu.
 	Two Sum, 6 kyu.
+	Sort array by string length, 7 kyu.
