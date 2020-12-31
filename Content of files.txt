@@ -20,3 +20,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	Sort array by string length, 7 kyu.
 	Invert values, 8 kyu.
 	Make a function that does arithmetic!, 7 kyu.
+	DNA to RNA Conversion, 7 kyu.
+	Two Oldest Ages, 7 kyu.
