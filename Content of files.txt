@@ -22,3 +22,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	Make a function that does arithmetic!, 7 kyu.
 	DNA to RNA Conversion, 7 kyu.
 	Two Oldest Ages, 7 kyu.
+	
+File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions of the next kata:	
+	Consecutive Differences, 7 kyu.
