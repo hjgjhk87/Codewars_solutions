@@ -25,3 +25,4 @@ File Solutions_for_tasks_from_codewars.com_Python3_p2.ipynb contents solutions o
 	
 File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions of the next kata:	
 	Consecutive Differences, 7 kyu.
+	Calculate Parity bit!, 7 kyu.
