@@ -28,3 +28,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Calculate Parity bit!, 7 kyu.
 	Maximum Multiple, 7 kyu.
 	JavaScript Array Filter, 7 kyu.
+	Float Precision, 7 kyu.
+	Retrieve array value by index with default, 7 kyu.
