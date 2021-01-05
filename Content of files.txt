@@ -30,3 +30,4 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	JavaScript Array Filter, 7 kyu.
 	Float Precision, 7 kyu.
 	Retrieve array value by index with default, 7 kyu.
+	Largest 5 digit number in a series, 7 kyu.
