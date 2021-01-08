@@ -35,3 +35,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Sort Numbers, 7 kyu.
 	Ninja vs Samurai: Strike, 7 kyu.
 	Person Class Bug, 7 kyu.
+	Populate hash with array keys and default value, 7 kyu.
+	Building Strings From a Hash, 7 kyu.
