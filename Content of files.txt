@@ -39,3 +39,4 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Building Strings From a Hash, 7 kyu.
 	Substituting Variables Into Strings: Padded Numbers, 7 kyu.
 	Elapsed Seconds, 7 kyu.
+	Fizz / Buzz, 7 kyu.
