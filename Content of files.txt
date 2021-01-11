@@ -40,3 +40,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Substituting Variables Into Strings: Padded Numbers, 7 kyu.
 	Elapsed Seconds, 7 kyu.
 	Fizz / Buzz, 7 kyu.
+	Return substring instance count, 7 kyu.
+	Remove anchor from URL, 7 kyu.
