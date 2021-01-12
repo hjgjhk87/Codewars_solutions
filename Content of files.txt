@@ -42,3 +42,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Fizz / Buzz, 7 kyu.
 	Return substring instance count, 7 kyu.
 	Remove anchor from URL, 7 kyu.
+	No oddities here, 7 kyu.
+	Limit string length - 1, 7 kyu.
