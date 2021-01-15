@@ -49,3 +49,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Javascript filter - 1, 7 kyu.
 	Thinking & Testing : Sport Star, 7 kyu.
 	Triangular Treasure, 7 kyu.
+	Palindrome chain length, 7 kyu.
+	Return a sorted list of objects, 7 kyu.
