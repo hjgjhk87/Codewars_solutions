@@ -52,4 +52,7 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Palindrome chain length, 7 kyu.
 	Return a sorted list of objects, 7 kyu.
 	Factorial Factory, 7 kyu.
-	Basic Calculator,7 kyu.
+	Basic Calculator, 7 kyu.
+	The reject() function, 7 kyu.
+	Leap Years, 7 kyu.
+	Return the Missing Element, 7 kyu.
