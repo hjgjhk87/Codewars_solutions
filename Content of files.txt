@@ -56,3 +56,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	The reject() function, 7 kyu.
 	Leap Years, 7 kyu.
 	Return the Missing Element, 7 kyu.
+	Anagram Detection, 7 kyu.
+	Naughty or Nice?, 7 kyu.
+	Sort Santa's Reindeer, 7 kyu.
