@@ -59,3 +59,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Anagram Detection, 7 kyu.
 	Naughty or Nice?, 7 kyu.
 	Sort Santa's Reindeer, 7 kyu.
+	Milk and Cookies for Santa, 7 kyu.
+	Boiled Eggs, 7 kyu.
+	IP Validation, 6 kyu.
