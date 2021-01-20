@@ -62,3 +62,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Milk and Cookies for Santa, 7 kyu.
 	Boiled Eggs, 7 kyu.
 	IP Validation, 6 kyu.
+	Strip Url Params, 6 kyu.
+	Format words into a sentence, 6 kyu.
