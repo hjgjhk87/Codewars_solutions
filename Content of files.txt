@@ -64,3 +64,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	IP Validation, 6 kyu.
 	Strip Url Params, 6 kyu.
 	Format words into a sentence, 6 kyu.
+	Pyramid Array, 6 kyu.
+	Make the Deadfish swim, 6 kyu.
