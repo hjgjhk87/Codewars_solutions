@@ -66,3 +66,8 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Format words into a sentence, 6 kyu.
 	Pyramid Array, 6 kyu.
 	Make the Deadfish swim, 6 kyu.
+	Find within array, 6 kyu
+	Sort Arrays (Ignoring Case), 6 kyu.
+	RGB To Hex Conversion, 5 kyu.
+	
+	
