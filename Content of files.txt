@@ -69,5 +69,7 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Find within array, 6 kyu
 	Sort Arrays (Ignoring Case), 6 kyu.
 	RGB To Hex Conversion, 5 kyu.
+	Round by 0.5 steps, 6 kyu.
+	flatten(), 5 kyu.
 	
 	
