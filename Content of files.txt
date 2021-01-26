@@ -73,5 +73,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	flatten(), 5 kyu.
 	Extract the domain name from a URL, 5 kyu, not finished.
 	Title Case, 6 kyu.
-	Search for letters, 7 kyu.
+	Multiply characters, 7 kyu.
+	Simple elevator, 7 kyu.
 	
