@@ -76,4 +76,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Multiply characters, 7 kyu.
 	Simple elevator, 7 kyu.
 	Summing a number's digits, 7 kyu.
+	Duplicate Arguments, 6 kyu.
 	
