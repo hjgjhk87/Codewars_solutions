@@ -77,4 +77,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Simple elevator, 7 kyu.
 	Summing a number's digits, 7 kyu.
 	Duplicate Arguments, 6 kyu.
+	uniq (UNIX style), 6 kyu.
 	
