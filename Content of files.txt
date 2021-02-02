@@ -81,4 +81,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	N-th Fibonacci, 6 kyu.
 	Adjacent repeated words in a string, 6 kyu.
 	Sequences and Series, 6 kyu.
+	Arabian String, 6 kyu.
 	
