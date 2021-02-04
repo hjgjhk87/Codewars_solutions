@@ -83,4 +83,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Sequences and Series, 6 kyu.
 	Arabian String, 6 kyu.
 	Throwing Darts, 6 kyu.
+	Valid Phone Number, 6 kyu.
 	
