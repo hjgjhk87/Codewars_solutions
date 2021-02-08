@@ -86,4 +86,6 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Valid Phone Number, 6 kyu.
 	Is a number prime?, 6 kyu.
 	Matrix Addition, 6 kyu.
+	Pete, the baker, 5 kyu.
+	Pete, the baker (part 2), 6 kyu.
 	
