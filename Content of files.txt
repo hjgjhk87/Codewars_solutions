@@ -90,4 +90,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Pete, the baker (part 2), 6 kyu.
 	Coordinates Validator, 6 kyu.
 	Base Conversion, 6 kyu.
+	PaginationHelper, 5 kyu.
 	
