@@ -92,4 +92,5 @@ File Solutions_for_tasks_from_codewars.com_Python3_p3.ipynb contents solutions o
 	Base Conversion, 6 kyu.
 	PaginationHelper, 5 kyu.
 	Beeramid, 5 kyu.
+	Mean Square Error, 5 kyu.
 	
