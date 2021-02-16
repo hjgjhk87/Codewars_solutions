@@ -110,6 +110,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 <h4>4. <a href="Codewars_solutions_Python3_p4.ipynb">Codewars_solutions_Python3_p4.ipynb</a> (current file):</h4>
 
 	Ninja vs Samurai: Attack + Block, 5 kyu.
+	Sort arrays - 3, 5 kyu.
 
 <h3>Codewars, JS</h3>
 
