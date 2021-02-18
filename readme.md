@@ -112,6 +112,8 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	Ninja vs Samurai: Attack + Block, 5 kyu.
 	Sort arrays - 3, 5 kyu.
 	Lazy Repeater, 5 kyu.
+	ISBN-10 Validation, 5 kyu.
+	Return substring instance count - 2, 5 kyu.
 
 <h3>Codewars, JS</h3>
 
