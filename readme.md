@@ -107,7 +107,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	Beeramid, 5 kyu.
 	Mean Square Error, 5 kyu.
 
-<h4>4. <a href="Codewars_solutions_Python3_p4.ipynb">Codewars_solutions_Python3_p4.ipynb</a> (the file in progress):</h4>
+<h4>4. <a href="Codewars_solutions_Python3_p4.ipynb">Codewars_solutions_Python3_p4.ipynb</a> (current file):</h4>
 
 <h3>Codewars, JS</h3>
 
