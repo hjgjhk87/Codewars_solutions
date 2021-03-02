@@ -117,7 +117,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 
 <h3>Pythonchallenge, Python 3</h3>
 
-<h4>1. <a href="pythonchallenge_solutions/Pythonchallenge_solutions_Python3.ipynb">Pythonchallenge_solutions_Python3.ipynb</a> </h4>
+<h4>1. <a href="pythonchallenge_solutions/Pythonchallenge_solutions_Python3.ipynb">Pythonchallenge_solutions_Python3.ipynb</a> (only 2 levels) </h4>
 
 
 
