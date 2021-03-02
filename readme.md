@@ -1,4 +1,4 @@
-This repository contains my (and not only my) solutions for tasks from <a href="https://codewars.com">Codewars</a> (they name tasks as katas), <a href=https://leetcode.com>Leetcode</a> (they name tasks as problems), (a little from) <a href="http://www.pythonchallenge.com">Pythonchallenge</a> (they name tasks as riddles).
+This repository contains my (and not only my) solutions for tasks from <a href="https://codewars.com">Codewars</a> (they name tasks as katas), <a href=https://leetcode.com>LeetCode</a> (they name tasks as problems), (a little from) <a href="http://www.pythonchallenge.com">Python Challenge</a> (they name tasks as riddles).
 
 
 
@@ -115,11 +115,18 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 
 <h3>Codewars, JS</h3>
 
-<h3>Leetcode, Python 3</h3>
+<h3>LeetCode, Python 3</h3>
 
-<h3>Leetcode, JS</h3>
+<h4>1. <a href="LeetCode_solutions_Python3_p1.ipynb">LeetCode_solutions_Python3_p1.ipynb</a> (current file):</h4>
 
-<h3>Pythonchallenge, Python 3</h3>
+	4. Median of Two Sorted Arrays, hard.
+
+
+<h3>LeetCode, JS</h3>
+
+	4. Median of Two Sorted Arrays, hard.
+
+<h3>Python Challenge, Python 3</h3>
 
 <h4>1. <a href="pythonchallenge_solutions/Pythonchallenge_solutions_Python3.ipynb">Pythonchallenge_solutions_Python3.ipynb</a> (only 2 levels) </h4>
 
