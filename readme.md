@@ -117,18 +117,21 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 
 <h3>LeetCode, Python 3</h3>
 
-<h4>1. <a href="LeetCode_solutions_Python3_p1.ipynb">LeetCode_solutions_Python3_p1.ipynb</a> (current file):</h4>
+<h4>1. <a href="LeetCode_solutions_Python3_p1.ipynb">LeetCode_solutions_Python3_p1.ipynb</a>:</h4>
 
 	4. Median of Two Sorted Arrays, hard.
+	2. Add Two Numbers, medium.
 
 
 <h3>LeetCode, JS</h3>
+
+<h4>1. <a href="LeetCode_solutions_JS.js">LeetCode_solutions_JS.js</a>:</h4>
 
 	4. Median of Two Sorted Arrays, hard.
 
 <h3>Python Challenge, Python 3</h3>
 
-<h4>1. <a href="pythonchallenge_solutions/Pythonchallenge_solutions_Python3.ipynb">Pythonchallenge_solutions_Python3.ipynb</a> (only 2 levels) </h4>
+<h4>1. <a href="pythonchallenge_solutions/Pythonchallenge_solutions_Python3.ipynb">Pythonchallenge_solutions_Python3.ipynb</a> (only 2 levels done) </h4>
 
 
 
