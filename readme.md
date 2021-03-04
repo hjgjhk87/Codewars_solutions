@@ -128,6 +128,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 <h4>1. <a href="LeetCode_solutions_JS.js">LeetCode_solutions_JS.js</a>:</h4>
 
 	4. Median of Two Sorted Arrays, hard.
+	3. Longest Substring Without Repeating Characters, medium.
 
 <h3>Python Challenge, Python 3</h3>
 
