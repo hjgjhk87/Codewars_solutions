@@ -147,3 +147,73 @@
 // console.log(lengthOfLongestSubstring("bbbabc"), 3); // 2 3
 // console.log(lengthOfLongestSubstring("bbbbbba"), 2); 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+// 5. Longest Palindromic Substring
+// https://leetcode.com/problems/longest-palindromic-substring/
+// Medium
+
+// Given a string s, return the longest palindromic substring in s.
+
+// Example 1:
+// Input: s = "babad"
+// Output: "bab"
+// Note: "aba" is also a valid answer.
+
+// Example 2:
+// Input: s = "cbbd"
+// Output: "bb"
+
+// Example 3:
+// Input: s = "a"
+// Output: "a"
+
+// Example 4:
+// Input: s = "ac"
+// Output: "a"
+
+// Constraints:
+// 1 <= s.length <= 1000
+// s consist of only digits and English letters (lower-case and/or upper-case)
+*/
+
+// // My solution:
+// /**
+//  * @param {string} s
+//  * @return {string}
+//  */
+//  function longestPalindrome(s) {
+//     function isPalindrom(s){
+//         let len = s.length;
+//         for (let i = 0; i < len / 2; i++) {
+//             if (s[i] != s[len - 1 - i]) {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+
+//     for (let i = s.length; i > 0; i--) {
+//         for (let start = 0; start < s.length - i + 1; start++) {
+//             let subStr = s.slice(start, start + i);
+//             if (isPalindrom(subStr)) {
+//                 return subStr;
+//             }
+//         }
+//     }
+// };
+
+// console.log(longestPalindrome('tanata'));
+// console.log(longestPalindrome('tanat'));
+// console.log(longestPalindrome('tana'));
+// console.log(longestPalindrome('tan'));
+// console.log(longestPalindrome('ta'));
+// console.log(longestPalindrome('t'));
+//console.log(longestPalindrome(''));
+
+// Some tests with substrings:
+// console.log('abcd'.slice(-1, -3, -1)); // '' видимо, slice не умеет "ходить" из начала в конец, а 3-й аргумент вообще лишний
+// console.log('abcd'.slice(-1, -3));  // '' видимо, slice не умеет "ходить" из начала в конец, а 3-й аргумент вообще лишний
+// console.log('abcd'.slice(1, 3, 2)); // 'bc', да точно 3-й аргумент вообще лишний
+// console.log('abcd'.substr(-4, -4)); // '', тоже не умеет обрабатывать отрицательные аргументы
+// console.log('abcd'[-1]);
