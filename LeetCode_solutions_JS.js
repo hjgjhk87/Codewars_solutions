@@ -217,3 +217,102 @@
 // console.log('abcd'.slice(1, 3, 2)); // 'bc', да точно 3-й аргумент вообще лишний
 // console.log('abcd'.substr(-4, -4)); // '', тоже не умеет обрабатывать отрицательные аргументы
 // console.log('abcd'[-1]);
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+// 6. ZigZag Conversion
+// https://leetcode.com/problems/zigzag-conversion/  
+// Medium
+
+// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+
+// P   A   H   N  
+// A P L S I I G  
+// Y   I   R  
+// And then read line by line: "PAHNAPLSIIGYIR"  
+
+// Write the code that will take a string and make this conversion given a number of rows:  
+
+// string convert(string s, int numRows);
+ 
+
+// Example 1:  
+// Input: s = "PAYPALISHIRING", numRows = 3  
+// Output: "PAHNAPLSIIGYIR"  
+
+// Example 2:  
+// Input: s = "PAYPALISHIRING", numRows = 4  
+// Output: "PINALSIGYAHRPI"  
+// Explanation:  
+// P     I    N  
+// A   L S  I G  
+// Y A   H R  
+// P     I  
+
+// Example 3:  
+// Input: s = "A", numRows = 1  
+// Output: "A"
+ 
+// Constraints:  
+// 1 <= s.length <= 1000   
+// s consists of English letters (lower-case and upper-case), ',' and '.'.  
+// 1 <= numRows <= 1000
+*/
+
+// // My solution:
+// /**
+//  * @param {string} s
+//  * @param {number} numRows
+//  * @return {string}
+//  */
+// var convert = function(s, numRows) {
+//     if (numRows == 1) {   // special case
+//         return s;
+//     }
+//     let resStr = '';
+//     let cols = Math.ceil(s.length / (2 * numRows - 2));
+//     for (let i = 0; i < numRows; i++) {
+//         for(let j = 0; j < cols; j++) {
+//             let cur = j * (2 * numRows - 2) + i;
+//             resStr += s[cur] || '';
+//             if (i != 0 && i != numRows - 1) {
+//                 cur = (2 * j + 1) * (2 * numRows - 2) - cur;
+//                 resStr += s[cur] || '';
+//             }
+//         }
+//     }
+//     return resStr;
+// };
+
+// console.log(convert('PAYPALISHIRING', 1), 'PAYPALISHIRING');
+// console.log(convert('PAYPALISHIRING', 2), 'PYAIHRNAPLSIIG');
+// console.log(convert('PAYPALISHIRING', 3), 'PAHNAPLSIIGYIR');
+// console.log(convert('PAYPALISHIRING', 4), 'PINALSIGYAHRPI');
+
+// // Some my test and attempts:
+// console.log(Math.floor(4.3)); // 4
+// console.log(Math.floor(4.0)); // 4
+// console.log(Math.floor(4.7)); // 4
+// console.log(Math.floor(Infinity));  // Infinity
+// console.log(10 % Infinity); // 10
+// console.log(10 / 0);  // Infinity
+// console.log(10 % 0);  // NaN
+// console.log(Infinity + 10); // Infinity
+
+// let numRows = 3;  // numRows == 1 - особый случай 
+// let ind = [];
+// let len = 16;
+// //let cols = Math.floor(len / (2 * numRows - 2)) + Math.floor(len % (2 * numRows - 2) / numRows);
+// let cols = Math.ceil(len / (2 * numRows - 2));
+// console.log(cols);
+// for (let i = 0; i < numRows; i++) {
+//     for(let j = 0; j < cols; j++) {
+//         let cur = j * (2 * numRows - 2) + i;
+//         ind.push(cur);
+//         if (i != 0 && i != numRows - 1) {
+//             ind.push((2 * j + 1) * (2 * numRows - 2) - cur)
+//         }
+//     }
+// }
+// console.log(ind);

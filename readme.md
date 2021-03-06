@@ -122,7 +122,8 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	4. Median of Two Sorted Arrays, hard.
 	2. Add Two Numbers, medium.
 	3. Longest Substring Without Repeating Characters, medium.
-	5. Longest Palindromic Substring
+	5. Longest Palindromic Substring, medium.
+	6. ZigZag Conversion, medium.
 
 <h3>LeetCode, JS</h3>
 
@@ -130,7 +131,8 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 
 	4. Median of Two Sorted Arrays, hard.
 	3. Longest Substring Without Repeating Characters, medium.
-	5. Longest Palindromic Substring
+	5. Longest Palindromic Substring, medium
+	6. ZigZag Conversion, medium
 
 <h3>Python Challenge, Python 3</h3>
 
