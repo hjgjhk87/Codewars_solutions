@@ -124,6 +124,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	3. Longest Substring Without Repeating Characters, medium.
 	5. Longest Palindromic Substring, medium.
 	6. ZigZag Conversion, medium.
+	1. Two Sum, easy.
 
 <h3>LeetCode, JS</h3>
 
@@ -133,6 +134,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	3. Longest Substring Without Repeating Characters, medium.
 	5. Longest Palindromic Substring, medium
 	6. ZigZag Conversion, medium
+	1. Two Sum, easy.
 
 <h3>Python Challenge, Python 3</h3>
 
