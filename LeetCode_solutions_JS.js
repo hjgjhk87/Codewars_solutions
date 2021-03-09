@@ -225,7 +225,8 @@
 // https://leetcode.com/problems/zigzag-conversion/  
 // Medium
 
-// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
+// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display 
+// this pattern in a fixed font for better legibility)
 
 // P   A   H   N  
 // A P L S I I G  
@@ -367,3 +368,64 @@
 // };
 
 // console.log(twoSum([2,7,11,15], 9));
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// 20210309
+/*
+15. 3Sum
+https://leetcode.com/problems/3sum/
+Medium
+
+Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets 
+in the array which gives the sum of zero.
+
+Notice that the solution set must not contain duplicate triplets.
+
+Example 1:
+Input: nums = [-1,0,1,2,-1,-4]
+Output: [[-1,-1,2],[-1,0,1]]
+
+Example 2:
+Input: nums = []
+Output: []
+
+Example 3:
+Input: nums = [0]
+Output: []
+
+Constraints:
+0 <= nums.length <= 3000
+-105 <= nums[i] <= 105
+*/
+// // My solution:
+// /**
+//  * @param {number[]} nums
+//  * @return {number[][]}
+//  */
+// var threeSum = function(nums) {
+//     let triples = [];
+//     let tripleHashes = new Set();
+//     for (let i = 0; i < nums.length; i++) {
+//         let diffs = new Map();
+//         for (let j = 0; j < nums.length; j++) {
+//             if (i != j) {
+//                 if (diffs.has(nums[j])) {
+//                     let triple = [nums[i], nums[j], diffs.get(nums[j])];
+//                     let curHash = triple.sort().toString();
+//                     if (tripleHashes.has(curHash) === false) {
+//                         tripleHashes.add(curHash);
+//                         triples.push(triple);
+//                     }
+//                 } else {
+//                     diffs.set(-(nums[i] + nums[j]), nums[j]);
+//                 }
+//             }
+//         }
+//     }
+//     return triples;
+// };
+
+// console.log(threeSum([-1,0,1,2,-1,-4]), [[-1,-1,2],[-1,0,1]])
+// console.log(threeSum([]), [])
+// console.log(threeSum([0]), [])
+// console.log(threeSum([0,0,0]), [[0,0,0]])

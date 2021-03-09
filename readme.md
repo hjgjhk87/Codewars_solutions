@@ -125,6 +125,8 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	5. Longest Palindromic Substring, medium.
 	6. ZigZag Conversion, medium.
 	1. Two Sum, easy.
+	11. Container With Most Water, medium, not finished.
+	15. 3Sum, medium.
 
 <h3>LeetCode, JS</h3>
 
@@ -135,6 +137,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	5. Longest Palindromic Substring, medium
 	6. ZigZag Conversion, medium
 	1. Two Sum, easy.
+	15. 3Sum, medium.
 
 <h3>Python Challenge, Python 3</h3>
 
