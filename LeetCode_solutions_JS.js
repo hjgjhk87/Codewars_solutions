@@ -476,3 +476,52 @@ Constraints:
 // console.log(reverse(-123));
 // console.log(reverse(120));
 // console.log(reverse(0));
+
+///////////////////////////////////////////////////////////////////////////////////////
+// 20210314
+/*
+14. Longest Common Prefix
+https://leetcode.com/problems/longest-common-prefix/
+Easy
+
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1:
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+Example 2:
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+Constraints:
+0 <= strs.length <= 200
+0 <= strs[i].length <= 200
+strs[i] consists of only lower-case English letters.
+*/
+// // My solution
+// /**
+//  * @param {string[]} strs
+//  * @return {string}
+//  */
+// var longestCommonPrefix = function(strs) {
+//     let prefix = '';
+//     if (strs.length > 0) {
+//         for (let i = 0; i < strs[0].length; i++) {
+//             for (let j = 1; j < strs.length; j++) {
+//                 if (strs[0][i] !== strs[j][i]) {
+//                     return prefix
+//                 }
+//             }
+//             prefix += strs[0][i];
+//         }
+//     }
+//     return prefix;
+// };
+
+// console.log(longestCommonPrefix([]), '');
+// console.log(longestCommonPrefix(["flower","flow","flight"]), 'fl');
+// console.log(longestCommonPrefix(["dog","racecar","car"]), '');
