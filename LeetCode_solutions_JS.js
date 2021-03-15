@@ -525,3 +525,61 @@ strs[i] consists of only lower-case English letters.
 // console.log(longestCommonPrefix([]), '');
 // console.log(longestCommonPrefix(["flower","flow","flight"]), 'fl');
 // console.log(longestCommonPrefix(["dog","racecar","car"]), '');
+
+///////////////////////////////////////////////////////////////////////////////////////
+// 20210315
+/*
+20. Valid Parentheses
+https://leetcode.com/problems/valid-parentheses/
+Easy
+
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order.
+
+Example 1:
+Input: s = "()"
+Output: true
+
+Example 2: Input: s = "()[]{}"
+Output: true
+
+Example 3:
+Input: s = "(]"
+Output: false
+
+Example 4:
+Input: s = "([)]"
+Output: false
+
+Example 5:
+Input: s = "{[]}"
+Output: true
+*/
+// // My solution
+// /**
+//  * @param {string} s
+//  * @return {boolean}
+//  */
+// var isValid = function(s) {
+//    let stack = [];
+//    let d = new Map([['(', ')'], ['{', '}'], ['[', ']']]);
+//    for (let char of s) {
+//         if ('({['.includes(char)) {
+//             stack.push(char);
+//         } else {
+//             if (stack.length === 0 || d.get(stack.pop()) !== char) {
+//                 return false;
+//             }
+//         }
+//    }
+//    return stack.length === 0;
+// };
+
+// console.log(isValid("()"), true);
+// console.log(isValid("()[]{}"), true);
+// console.log(isValid("(]"), false);
+// console.log(isValid("([)]"), false);
+// console.log(isValid("{[]}"), true);
+// console.log(isValid("]"), false);
