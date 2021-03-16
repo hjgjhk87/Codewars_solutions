@@ -132,6 +132,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	7. Reverse Integer, easy.
 	14. Longest Common Prefix, easy.
 	20. Valid Parentheses, easy.
+	26. Remove Duplicates from Sorted Array, easy.
 
 <h3>LeetCode, JS</h3>
 
@@ -146,6 +147,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	7. Reverse Integer, easy.
 	14. Longest Common Prefix, easy.
 	20. Valid Parentheses, easy.
+	26. Remove Duplicates from Sorted Array, easy.
 
 <h3>Python Challenge, Python 3</h3>
 
