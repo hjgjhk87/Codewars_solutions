@@ -437,7 +437,8 @@ Constraints:
 https://leetcode.com/problems/reverse-integer/
 Easy
 
-Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes 
+the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
 
 Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
@@ -533,10 +534,12 @@ strs[i] consists of only lower-case English letters.
 https://leetcode.com/problems/valid-parentheses/
 Easy
 
-Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', 
+determine if the input string is valid.
 
 An input string is valid if:
-Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order.
+Open brackets must be closed by the same type of brackets. Open brackets must be 
+closed in the correct order.
 
 Example 1:
 Input: s = "()"
@@ -591,22 +594,28 @@ Output: true
 https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 easy
 
-Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.
+Given a sorted array nums, remove the duplicates in-place such that each element 
+appears only once and returns the new length.
 
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+Do not allocate extra space for another array, you must do this by modifying the 
+input array in-place with O(1) extra memory.
 
 Clarification: Confused why the returned value is an integer but your answer is an array?
-Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.
+Note that the input array is passed in by reference, which means a modification to the 
+input array will be known to the caller as well.
 
 Example 1:
 Input: nums = [1,1,2]
 Output: 2, nums = [1,2]
-Explanation: Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the returned length.
+Explanation: Your function should return length = 2, with the first two elements of 
+nums being 1 and 2 respectively. It doesn't matter what you leave beyond the returned length.
 
 Example 2:
 Input: nums = [0,0,1,1,1,2,2,3,3,4]
 Output: 5, nums = [0,1,2,3,4]
-Explanation: Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively. It doesn't matter what values are set beyond the returned length.
+Explanation: Your function should return length = 5, with the first five elements of nums 
+being modified to 0, 1, 2, 3, and 4 respectively. It doesn't matter what values are set 
+beyond the returned length.
 
 Constraints:
 0 <= nums.length <= 3 * 104
@@ -661,8 +670,97 @@ nums is sorted in ascending order.
 //     return nums.length;
 // };
 
+// // Almost the #2 but better
+// /**
+//  * @param {number[]} nums
+//  * @return {number}
+//  */
+//  var removeDuplicates = function(nums) {
+//     let pr = 0;
+//     let cur = 1;
+//     while (cur < nums.length) {
+//         if (nums[cur] !== nums[pr]) {
+//             nums.splice(pr + 1, cur - pr - 1);
+//             pr++;
+//             cur = pr + 1;
+//         }
+//         else {
+//             cur++;
+//         }
+//     }
+//     nums.splice(pr + 1, cur - pr - 1);
+//     return nums.length;
+// };
+
 // console.log(removeDuplicates([1, 1, 2]), 2);
 // console.log(removeDuplicates([1, 1, 1, 1, 1]), 1);
 // console.log(removeDuplicates([0,0,1,1,1,2,2,3,3,4]), 5);
 // console.log(removeDuplicates([]), 0);
 
+////////////////////////////////////////////////////////////////////////////////////////////
+// 20210317
+/*
+27. Remove Element
+https://leetcode.com/problems/remove-element/
+Easy
+
+Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) 
+extra memory.
+
+The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+
+Clarification:
+
+Confused why the returned value is an integer but your answer is an array?
+
+Note that the input array is passed in by reference, which means a modification to the input array will be known 
+to the caller as well.
+
+Example 1:
+Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2]
+Explanation: Your function should return length = 2, with the first two elements of nums being 2.
+It doesn't matter what you leave beyond the returned length. For example if you return 2 with nums = [2,2,3,3] or 
+nums = [2,2,0,0], your answer will be accepted.
+
+Example 2:
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3]
+Explanation: Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4. 
+Note that the order of those five elements can be arbitrary. It doesn't matter what values are set beyond the returned length.
+*/
+// // My solutions:
+// // #1
+// /**
+//  * @param {number[]} nums
+//  * @param {number} val
+//  * @return {number}
+//  */
+//  var removeElement = function(nums, val) {
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] === val) {
+//             nums.splice(i, 1);
+//             i--;
+//         }
+//     }
+//     return nums.length; 
+// };
+
+// // #2 Using Lodash' _.remove method
+// /**
+//  * @param {number[]} nums
+//  * @param {number} val
+//  * @return {number}
+//  */
+//  var removeElement = function(nums, val) {
+//     _.remove(nums, (item) => item === val);
+//     return nums.length;
+// };
+
+// console.log(removeElement([3,2,2,3], 3), 2);
+// console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2), 5);
+// console.log(removeElement([1, 1, 1, 1, 1], 1), 0);
+// console.log(removeElement([1, 1, 1, 1, 1], 2), 5);
+// console.log(removeElement([], 3), 0);
