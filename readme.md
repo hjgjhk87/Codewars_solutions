@@ -150,6 +150,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	20. Valid Parentheses, easy.
 	26. Remove Duplicates from Sorted Array, easy.
 	27. Remove Element, easy.
+	28. Implement strStr(), easy.
 
 <h3>Python Challenge, Python 3</h3>
 

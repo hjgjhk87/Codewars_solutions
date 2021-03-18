@@ -43,6 +43,12 @@
 */
 
 // My solution:
+
+// /**
+//  * @param {number[]} nums1
+//  * @param {number[]} nums2
+//  * @return {number}
+//  */
 // var findMedianSortedArrays = function(nums1, nums2) {
 //     let nums = []
 //     nums.push(...nums1, ...nums2);
@@ -97,6 +103,7 @@
 */
 
 // // My solution:
+
 // /**
 //  * @param {string} s
 //  * @return {number}
@@ -178,6 +185,7 @@
 */
 
 // // My solution:
+
 // /**
 //  * @param {string} s
 //  * @return {string}
@@ -262,6 +270,7 @@
 */
 
 // // My solution:
+
 // /**
 //  * @param {string} s
 //  * @param {number} numRows
@@ -350,6 +359,8 @@
 // -109 <= target <= 109
 // Only one valid answer exists.
 */
+
+// // My solution:
 
 // /**
 //  * @param {number[]} nums
@@ -461,7 +472,9 @@ Output: 0
 Constraints:
 -231 <= x <= 231 - 1
 */
-// // My solution
+
+// // My solution:
+
 // /**
 //  * @param {number} x
 //  * @return {number}
@@ -503,7 +516,9 @@ Constraints:
 0 <= strs[i].length <= 200
 strs[i] consists of only lower-case English letters.
 */
-// // My solution
+
+// // My solution:
+
 // /**
 //  * @param {string[]} strs
 //  * @return {string}
@@ -560,7 +575,9 @@ Example 5:
 Input: s = "{[]}"
 Output: true
 */
-// // My solution
+
+// // My solution:
+
 // /**
 //  * @param {string} s
 //  * @return {boolean}
@@ -622,7 +639,9 @@ Constraints:
 -104 <= nums[i] <= 104
 nums is sorted in ascending order.
 */
+
 // // My solutions:
+
 // // #1
 // /**
 //  * @param {number[]} nums
@@ -731,14 +750,16 @@ Output: 5, nums = [0,1,4,0,3]
 Explanation: Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4. 
 Note that the order of those five elements can be arbitrary. It doesn't matter what values are set beyond the returned length.
 */
+
 // // My solutions:
+
 // // #1
 // /**
 //  * @param {number[]} nums
 //  * @param {number} val
 //  * @return {number}
 //  */
-//  var removeElement = function(nums, val) {
+// var removeElement = function(nums, val) {
 //     for (let i = 0; i < nums.length; i++) {
 //         if (nums[i] === val) {
 //             nums.splice(i, 1);
@@ -754,7 +775,7 @@ Note that the order of those five elements can be arbitrary. It doesn't matter w
 //  * @param {number} val
 //  * @return {number}
 //  */
-//  var removeElement = function(nums, val) {
+// var removeElement = function(nums, val) {
 //     _.remove(nums, (item) => item === val);
 //     return nums.length;
 // };
@@ -764,3 +785,115 @@ Note that the order of those five elements can be arbitrary. It doesn't matter w
 // console.log(removeElement([1, 1, 1, 1, 1], 1), 0);
 // console.log(removeElement([1, 1, 1, 1, 1], 2), 5);
 // console.log(removeElement([], 3), 0);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+// 20210318
+/*
+28. Implement strStr()
+https://leetcode.com/problems/implement-strstr/
+Easy
+
+Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+Clarification:
+What should we return when needle is an empty string? This is a great question to ask during an interview.
+
+For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's 
+strstr() and Java's indexOf() (and Python's index(), anf JS's indexOf()).
+
+Example 1:
+Input: haystack = "hello", needle = "ll"
+Output: 2
+
+Example 2:
+Input: haystack = "aaaaa", needle = "bba"
+Output: -1
+
+Example 3:
+Input: haystack = "", needle = ""
+Output: 0
+
+Constraints:
+0 <= haystack.length, needle.length <= 5 * 104
+haystack and needle consist of only lower-case English characters.
+*/
+
+// // My solutions:
+
+// // #1 Using standard string.indexOf method
+// /**
+//  * @param {string} haystack
+//  * @param {string} needle
+//  * @return {number}
+//  */
+//  var strStr = function(haystack, needle) {
+//     // if (!needle) {   // this check is excess, because method str.indexOf works the same way
+//     //     return 0;
+//     // }
+//     return haystack.indexOf(needle);
+// };
+
+// // Almost the same
+// var strStr = (haystack, needle) => haystack.indexOf(needle);
+
+// // #2 My bicycle (with using string.startsWith method though)
+// /**
+//  * @param {string} haystack
+//  * @param {string} needle
+//  * @return {number}
+//  */
+// var strStr = function(haystack, needle) {    
+//     if (!needle) {
+//         return 0;
+//     }
+//     for (let i = 0; i < haystack.length; i++) {
+//         if (haystack[i] === needle[0]) {
+//             if (haystack.slice(i + 1).startsWith(needle.slice(1))) {
+//                 return i;
+//             }
+//         }
+//     }
+//     return -1;
+// };
+
+// // #3 My absolute bicycle (without using any of standard/library methods (string.indexOf, string.startsWith ...))
+// // I could implement my own startsWith function but it would demand coping of the strings on its every call.
+// // I don't want waste resourses for this
+// /**
+//  * @param {string} haystack
+//  * @param {string} needle
+//  * @return {number}
+//  */
+// var strStr = function(haystack, needle) {    
+//     if (!needle) {
+//         return 0;
+//     }
+//     for (let i = 0; i < haystack.length; i++) {
+//         if (haystack[i] === needle[0]) {
+//             // Check if the rest of the haystack starts with the rest of the needle
+//             // If the rest of needle is longer than the rest of the haystack -> false 
+//             if (needle.length - 1 <= haystack.length - 1 - i) {
+//                 let startsWith = true;
+//                 for (let j = 1, k = i + 1; j < needle.length; j++, k++) {
+//                     if (needle[j] !== haystack[k]) {
+//                         startsWith = false;
+//                         break;
+//                     }
+//                 }
+//                 if (startsWith) {
+//                     return i;
+//                 }
+//             }
+//         }
+//     }
+//     return -1;
+// };
+
+// console.log(strStr('hello', 'll'), 2);
+// console.log(strStr('hello', 'helloooo'), -1);
+// console.log(strStr('aaaaaa', 'bba'), -1);
+// console.log(strStr('', ''), 0);
+// console.log(strStr('dddddd', ''), 0);
+
+// console.log('example'.indexOf('')); //  0 
+// console.log('example'.startsWith('')); // true
