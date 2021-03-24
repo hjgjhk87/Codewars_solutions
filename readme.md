@@ -154,6 +154,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	27. Remove Element, easy.
 	28. Implement strStr(), easy.
 	2. Add Two Numbers, medium.
+	24. Swap Nodes in Pairs, medium.
 
 <h3>Python Challenge, Python 3</h3>
 

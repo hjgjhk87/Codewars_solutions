@@ -996,5 +996,76 @@ It is guaranteed that the list represents a number that does not have leading ze
 // console.log(addTwoNumbers(new ListNode(7), new ListNode(5)));
 // console.log(addTwoNumbers(new ListNode(7, new ListNode(9)), new ListNode(5)));
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 20210324
+/*
+24. Swap Nodes in Pairs
+https://leetcode.com/problems/swap-nodes-in-pairs/
+Medium
+
+Given a linked list, swap every two adjacent nodes and return its head.
+
+Example 1:
+Input: head = [1,2,3,4]
+Output: [2,1,4,3]
+
+Example 2:
+Input: head = []
+Output: []
+
+Example 3:
+Input: head = [1]
+Output: [1]
+
+Constraints:
+The number of nodes in the list is in the range [0, 100].
+0 <= Node.val <= 100
+
+Follow up: Can you solve the problem without modifying the values in the list's nodes? (i.e., Only nodes themselves may be changed.)
+*/
+
+// // My solution:
+
+// function ListNode(val, next) {
+//     this.val = (val===undefined ? 0 : val);
+//     this.next = (next===undefined ? null : next);
+// }
+
+// /**
+//  * @param {ListNode} head
+//  * @return {ListNode}
+//  */
+// var swapPairs = function(head) {
+//     if (head) {
+//         let cur = head;
+//         let addresses = [];
+//         let i = 0;
+//         while (cur) {
+//             addresses.push(cur);
+//             if (i % 2 === 1) {
+//                 //[addresses[i - 1], addresses[i]] = [addresses[i], addresses[i - 1]];
+//                 let temp = addresses[i - 1];
+//                 addresses[i - 1] = addresses[i];
+//                 addresses[i] = temp;
+//             }
+//             i++;
+//             cur = cur.next;
+//         }
+//         console.log(addresses, i);
+
+//         head = addresses[0];
+//         cur = addresses[0];
+//         for (let i = 1; i < addresses.length; i++) {
+//             cur.next = addresses[i];
+//             cur = cur.next;
+//         }
+//         cur.next = null;
+//     }
+//     return head;  
+// };
+
+// console.log(swapPairs(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))))));
+
+
 
 
