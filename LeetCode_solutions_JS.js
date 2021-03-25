@@ -1024,8 +1024,9 @@ The number of nodes in the list is in the range [0, 100].
 Follow up: Can you solve the problem without modifying the values in the list's nodes? (i.e., Only nodes themselves may be changed.)
 */
 
-// // My solution:
+// // My solutions:
 
+// // #1 Putting addresses of all nodes in an additional array, swaping addresses in the array and linking all nodes (in new order)
 // function ListNode(val, next) {
 //     this.val = (val===undefined ? 0 : val);
 //     this.next = (next===undefined ? null : next);
@@ -1051,8 +1052,6 @@ Follow up: Can you solve the problem without modifying the values in the list's 
 //             i++;
 //             cur = cur.next;
 //         }
-//         console.log(addresses, i);
-
 //         head = addresses[0];
 //         cur = addresses[0];
 //         for (let i = 1; i < addresses.length; i++) {
@@ -1064,8 +1063,48 @@ Follow up: Can you solve the problem without modifying the values in the list's 
 //     return head;  
 // };
 
+// // console.log(swapPairs(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))))));
+
+// // #2 Swapping pairs in place... klm plz for that Destructuring (multiple) assignment
+// function ListNode(val, next) {
+//     this.val = (val===undefined ? 0 : val);
+//     this.next = (next===undefined ? null : next);
+// }
+
+// // /**
+// //  * @param {ListNode} head
+// //  * @return {ListNode}
+// //  */
+// var swapPairs = function(head) {
+//     if (head) {
+//         if (head.next) {
+//             let cur = head;
+//             let prev = new ListNode(0);    // initialize with some random ListNode object
+//             head = head.next;
+//             while (cur) {
+//                 if (cur.next) {
+//                     [cur, cur.next, cur.next.next, prev.next] = [cur.next, cur, cur.next.next, cur.next];
+//                     cur = cur.next.next;
+//                     prev = prev.next.next;
+//                 } else {
+//                     break;
+//                 }
+//             }
+//         }
+//     }
+//     return head;
+// }
+
 // console.log(swapPairs(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))))));
+// console.log(swapPairs(new ListNode(1, new ListNode(2, new ListNode(3)))));
+// console.log(swapPairs(new ListNode(1)));
 
+// My unsuccsessful attempts:
+//let cur = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+// let cur = new ListNode(1, new ListNode(2));
 
+// let temp;
+// [cur, cur.next, cur.next.next] = [cur.next, cur, cur.next.next]
+// console.log(cur, temp);
 
 

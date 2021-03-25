@@ -136,6 +136,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	27. Remove Element, easy.
 	28. Implement strStr(), easy.
 	22. Generate Parentheses, medium.
+	24. Swap Nodes in Pairs, medium.
 
 <h3>LeetCode, JS</h3>
 
