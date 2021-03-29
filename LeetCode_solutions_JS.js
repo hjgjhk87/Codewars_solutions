@@ -1110,7 +1110,7 @@ Follow up: Can you solve the problem without modifying the values in the list's 
 // console.log(cur, temp);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-20210326
+// 20210326
 
 /*
 35. Search Insert Position
@@ -1182,3 +1182,81 @@ nums contains distinct values sorted in ascending order.
 // console.log(searchInsert([1, 3, 5, 6], 7), 4);
 // console.log(searchInsert([1, 3, 5, 6], 0), 0);
 // console.log(searchInsert([1], 0), 0);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 20210329
+
+/*
+33. Search in Rotated Sorted Array
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+Medium
+
+There is an integer array nums sorted in ascending order (with distinct values).
+
+Prior to being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+
+Given the array nums after the rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+Example 1:
+Input: nums = [4,5,6,7,0,1,2], target = 0
+Output: 4
+
+Example 2:
+Input: nums = [4,5,6,7,0,1,2], target = 3
+Output: -1
+
+Example 3:
+Input: nums = [1], target = 0
+Output: -1
+
+Constraints:
+1 <= nums.length <= 5000
+-104 <= nums[i] <= 104
+All values of nums are unique.
+nums is guaranteed to be rotated at some pivot.
+-104 <= target <= 104
+
+Follow up: Can you achieve this in O(log n) time complexity?
+*/
+
+// // My solution:
+
+// /**
+//  * @param {number[]} nums
+//  * @param {number} target
+//  * @return {number}
+//  */
+// var search = function(nums, target) {
+//     let shift = (lst, ind, k) => (lst.length + (k + ind)) % lst.length;
+
+//     let minInd = 0;
+//     let minim = Infinity;
+//     for (let i = 0; i < nums.length; i++) {
+//         if (nums[i] < minim) {
+//             minInd = i;
+//             minim = nums[i];
+//         }
+//     }
+
+//     let pivotInd = minInd;
+//     let start = 0;
+//     let end = nums.length - 1;
+//     let pos = Math.floor(nums.length / 2);
+//     while (start <= end) {
+//         if (target < nums[shift(nums, pos, pivotInd)]) {
+//             end = pos - 1;
+//         } else if (target > nums[shift(nums, pos, pivotInd)]) {
+//             start = pos + 1;
+//         } else {
+//             return shift(nums, pos, pivotInd);
+//         }
+//         pos = Math.floor((start + end) / 2);
+//     }
+//     return -1;
+// };
+
+// console.log(search([4, 5, 6, 7, 0, 1, 2], 0), 4);
+// console.log(search([4, 5, 6, 7, 0, 1, 2], 3), -1);
+// console.log(search([1, 3], 4), -1);
+// console.log(search([3, 5, 1], 5), 1);
+// console.log(search([1], 0), -1);
