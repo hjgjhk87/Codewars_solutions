@@ -139,6 +139,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	24. Swap Nodes in Pairs, medium.
 	35. Search Insert Position, easy.
 	33. Search in Rotated Sorted Array, medium.
+	38. Count and Say, medium.
 
 <h3>LeetCode, JS</h3>
 
