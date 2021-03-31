@@ -1,6 +1,6 @@
 'use strict'
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 /*
 // 4. Median of Two Sorted Arrays
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
@@ -69,7 +69,7 @@
 // console.log(findMedianSortedArrays(nums1, nums2), 2);
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 /*
 // 3. Longest Substring Without Repeating Characters
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
@@ -154,7 +154,7 @@
 // console.log(lengthOfLongestSubstring("bbbabc"), 3); // 2 3
 // console.log(lengthOfLongestSubstring("bbbbbba"), 2); 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
 /*
 // 5. Longest Palindromic Substring
 // https://leetcode.com/problems/longest-palindromic-substring/
@@ -233,8 +233,8 @@
 // https://leetcode.com/problems/zigzag-conversion/  
 // Medium
 
-// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display 
-// this pattern in a fixed font for better legibility)
+// The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like 
+// this: (you may want to display this pattern in a fixed font for better legibility)
 
 // P   A   H   N  
 // A P L S I I G  
@@ -334,9 +334,11 @@
 // https://leetcode.com/problems/two-sum/
 // Easy
 
-// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+// Given an array of integers nums and an integer target, return indices of the two numbers 
+// such that they add up to target.
 
-// You may assume that each input would have exactly one solution, and you may not use the same element twice.
+// You may assume that each input would have exactly one solution, and you may not use the 
+// same element twice.
 
 // You can return the answer in any order.
 
@@ -723,9 +725,11 @@ nums is sorted in ascending order.
 https://leetcode.com/problems/remove-element/
 Easy
 
-Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+Given an array nums and a value val, remove all instances of that value in-place and return 
+the new length.
 
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) 
+Do not allocate extra space for another array, you must do this by modifying the input array 
+in-place with O(1) 
 extra memory.
 
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
@@ -734,14 +738,17 @@ Clarification:
 
 Confused why the returned value is an integer but your answer is an array?
 
-Note that the input array is passed in by reference, which means a modification to the input array will be known 
+Note that the input array is passed in by reference, which means a modification to the input 
+array will be known 
 to the caller as well.
 
 Example 1:
 Input: nums = [3,2,2,3], val = 3
 Output: 2, nums = [2,2]
-Explanation: Your function should return length = 2, with the first two elements of nums being 2.
-It doesn't matter what you leave beyond the returned length. For example if you return 2 with nums = [2,2,3,3] or 
+Explanation: Your function should return length = 2, with the first two elements of nums 
+being 2.
+It doesn't matter what you leave beyond the returned length. For example if you return 2 with 
+nums = [2,2,3,3] or 
 nums = [2,2,0,0], your answer will be accepted.
 
 Example 2:
@@ -793,12 +800,15 @@ Note that the order of those five elements can be arbitrary. It doesn't matter w
 https://leetcode.com/problems/implement-strstr/
 Easy
 
-Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+Return the index of the first occurrence of needle in haystack, or -1 if needle is not part 
+of haystack.
 
 Clarification:
-What should we return when needle is an empty string? This is a great question to ask during an interview.
+What should we return when needle is an empty string? This is a great question to ask during 
+an interview.
 
-For the purpose of this problem, we will return 0 when needle is an empty string. This is consistent to C's 
+For the purpose of this problem, we will return 0 when needle is an empty string. This is 
+consistent to C's 
 strstr() and Java's indexOf() (and Python's index(), anf JS's indexOf()).
 
 Example 1:
@@ -856,8 +866,10 @@ haystack and needle consist of only lower-case English characters.
 //     return -1;
 // };
 
-// // #3 My absolute bicycle (without using any of standard/library methods (string.indexOf, string.startsWith ...))
-// // I could implement my own startsWith function but it would demand coping of the strings on its every call.
+// // #3 My absolute bicycle (without using any of standard/library methods 
+// // (string.indexOf, string.startsWith ...))
+// // I could implement my own startsWith function but it would demand coping of the strings
+// // on its every call.
 // // I don't want waste resourses for this
 // /**
 //  * @param {string} haystack
@@ -898,15 +910,17 @@ haystack and needle consist of only lower-case English characters.
 // console.log('example'.indexOf('')); //  0 
 // console.log('example'.startsWith('')); // true
 
-//////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
 // 20210321
 /*
 2. Add Two Numbers
 https://leetcode.com/problems/add-two-numbers/
 Medium
 
-You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, 
-and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+You are given two non-empty linked lists representing two non-negative integers. 
+The digits are stored in reverse order, 
+and each of their nodes contains a single digit. Add the two numbers and return the sum 
+as a linked list.
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
@@ -996,7 +1010,7 @@ It is guaranteed that the list represents a number that does not have leading ze
 // console.log(addTwoNumbers(new ListNode(7), new ListNode(5)));
 // console.log(addTwoNumbers(new ListNode(7, new ListNode(9)), new ListNode(5)));
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////
 // 20210324
 /*
 24. Swap Nodes in Pairs
@@ -1021,7 +1035,8 @@ Constraints:
 The number of nodes in the list is in the range [0, 100].
 0 <= Node.val <= 100
 
-Follow up: Can you solve the problem without modifying the values in the list's nodes? (i.e., Only nodes themselves may be changed.)
+Follow up: Can you solve the problem without modifying the values in the list's nodes? 
+(i.e., Only nodes themselves may be changed.)
 */
 
 // // My solutions:
@@ -1109,7 +1124,7 @@ Follow up: Can you solve the problem without modifying the values in the list's 
 // [cur, cur.next, cur.next.next] = [cur.next, cur, cur.next.next]
 // console.log(cur, temp);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
 // 20210326
 
 /*
@@ -1183,7 +1198,7 @@ nums contains distinct values sorted in ascending order.
 // console.log(searchInsert([1, 3, 5, 6], 0), 0);
 // console.log(searchInsert([1], 0), 0);
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 // 20210329
 
 /*
@@ -1193,9 +1208,13 @@ Medium
 
 There is an integer array nums sorted in ascending order (with distinct values).
 
-Prior to being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+Prior to being passed to your function, nums is rotated at an unknown pivot index k 
+(0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], 
+nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated 
+at pivot index 3 and become [4,5,6,7,0,1,2].
 
-Given the array nums after the rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+Given the array nums after the rotation and an integer target, return the index of target 
+if it is in nums, or -1 if it is not in nums.
 
 Example 1:
 Input: nums = [4,5,6,7,0,1,2], target = 0
@@ -1260,3 +1279,76 @@ Follow up: Can you achieve this in O(log n) time complexity?
 // console.log(search([1, 3], 4), -1);
 // console.log(search([3, 5, 1], 5), 1);
 // console.log(search([1], 0), -1);
+
+////////////////////////////////////////////////////////////////////////////////////////
+// 20210331
+
+/*
+38. Count and Say¶
+https://leetcode.com/problems/count-and-say/
+Medium
+
+The count-and-say sequence is a sequence of digit strings defined by the recursive formula:
+
+countAndSay(1) = "1"
+countAndSay(n) is the way you would "say" the digit string from countAndSay(n-1), which is 
+then converted into a different digit string. To determine how you "say" a digit string, 
+split it into the minimal number of groups so that each group is a contiguous section all 
+of the same character. Then for each group, say the number of characters, then say the 
+character. To convert the saying into a digit string, replace the counts with a number and 
+concatenate every saying.
+
+Example 1:
+Input: n = 1
+Output: "1"
+Explanation: This is the base case.
+
+Example 2:
+Input: n = 4
+Output: "1211"
+Explanation:
+countAndSay(1) = "1"
+countAndSay(2) = say "1" = one 1 = "11"
+countAndSay(3) = say "11" = two 1's = "21"
+countAndSay(4) = say "21" = one 2 + one 1 = "12" + "11" = "1211"
+
+Constraints:
+1 <= n <= 30
+*/
+
+// // My solution:
+
+// /**
+//  * @param {number} n
+//  * @return {string}
+//  */
+// var countAndSay = function(n) {
+//   let res = '1';
+
+//   for (let i = 0; i < n - 1; i++) {
+    
+//     let prevChar = res[0];
+//     let charAmount = 1;
+//     let resCopy = res.slice(1);
+//     res = '';
+
+//     for (let char of resCopy) {
+//       if (char === prevChar) {
+//         charAmount += 1;
+//       } else {
+//           res += charAmount + prevChar;
+//           prevChar = char;
+//           charAmount = 1;
+//       }
+//     }
+
+//     res += charAmount + prevChar;
+//   }
+  
+//   return res;
+// };
+
+// console.log(countAndSay(1), '1');
+// console.log(countAndSay(2), '11');
+// console.log(countAndSay(3), '21');
+// console.log(countAndSay(4), '1211');
