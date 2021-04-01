@@ -114,6 +114,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	Lazy Repeater, 5 kyu.
 	ISBN-10 Validation, 5 kyu.
 	Return substring instance count - 2, 5 kyu.
+	Interleaving Arrays, 5 kyu.
 
 <h3>Codewars, JS</h3>
 
