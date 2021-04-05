@@ -162,6 +162,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	35. Search Insert Position, easy.
 	33. Search in Rotated Sorted Array, medium.
 	38. Count and Say, medium.
+	29. Divide Two Integers, medium.
 
 <h3>Python Challenge, Python 3</h3>
 
