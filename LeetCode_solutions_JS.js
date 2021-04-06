@@ -1369,7 +1369,8 @@ The integer division should truncate toward zero, which means losing its fractio
 For example, truncate(8.345) = 8 and truncate(-2.7335) = -2.
 
 Note: Assume we are dealing with an environment that could only store integers within the 
-32-bit signed integer range: [−2**31, 2**31 − 1]. For this problem, assume that your function 
+32-bit signed integer range: [−2**31, 2**31 − 1]. For this problem, assume that your 
+function 
 returns 2**31 − 1 when the division result overflows.
 
 Example 1:
@@ -1479,3 +1480,166 @@ divisor != 0
 // console.log(divide(1, 2), 0);
 // console.log(divide(-6, 2), -3);
 // console.log(divide(-2147483648, -1), 2147483647);
+
+///////////////////////////////////////////////////////////////////////////////////
+// 20210406
+/*
+34. Find First and Last Position of Element in Sorted Array  
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/  
+Medium
+
+Given an array of integers nums sorted in ascending order, find the starting and 
+ending position of a given target value.
+
+If target is not found in the array, return [-1, -1].
+
+Follow up: Could you write an algorithm with O(log n) runtime complexity?
+
+Example 1:  
+Input: nums = [5,7,7,8,8,10], target = 8  
+Output: [3,4]
+
+Example 2:  
+Input: nums = [5,7,7,8,8,10], target = 6
+Output: [-1,-1]
+
+Example 3:  
+Input: nums = [], target = 0
+Output: [-1,-1]
+
+Constraints:  
+0 <= nums.length <= 105
+-109 <= nums[i] <= 109
+nums is a non-decreasing array.
+-109 <= target <= 109
+*/
+
+// My solution
+// /**
+//  * @param {number[]} nums
+//  * @param {number} target
+//  * @return {number[]}
+//  */
+//  const searchRange = function(nums, target) {
+//     let start = 0;
+//     let end = nums.length - 1;
+//     let pos = Math.floor(nums.length / 2);
+
+//     while (start <= end) {
+//       if (nums[pos] < target) {
+//         start = pos + 1;
+//       } else {
+//         if (nums[pos] > target) {
+//           end = pos - 1;
+//         } else {
+//           return [binRec(nums, start, pos - 1, target), binRec(nums, pos + 1, end, target, false)];
+//         }
+//       }
+//       pos = Math.floor((start + end ) / 2);
+//     }
+
+//     return [-1, -1];
+// };
+
+// const binRec = (nums, from, to, target, left = true) => {
+//   let start = from;
+//   let end = to;
+//   let pos = Math.floor((start + end) / 2);
+
+//   while (start <= end) {
+//     if (nums[pos] < target) {
+//       start = pos + 1;
+//     } else {
+//       if (nums[pos] > target) {
+//         end = pos - 1
+//       } else {
+//         if (left) {
+//           end = pos - 1
+//         } else {
+//           start = pos + 1;
+//         }
+//       }
+//     }
+//     pos = Math.floor((start + end ) / 2);
+//   }
+
+//   if (left) {
+//     return start;
+//   } else {
+//     return end;
+//   }
+// };
+
+// console.log(searchRange([1, 3, 4, 7, 9], 7)); // [3, 3]
+// console.log(searchRange([1, 1, 2, 2, 3, 3, 3, 3, 3], 1)); [0, 1]
+// console.log(searchRange([1, 1, 2, 2, 3, 3, 3, 3, 3], 2)); [2, 3]
+// console.log(searchRange([1, 1, 2, 2, 3, 3, 3, 3, 3], 3)); [4, 8]
+// console.log(searchRange([1, 2], 1)); // [0, 0]
+// console.log(searchRange([1, 1, 2], 1)); [0, 1]
+// console.log(searchRange([1, 1, 1, 2], 1)); [0, 2]
+// console.log(searchRange([1, 2], 0)); // [-1, -1]
+// console.log(searchRange([1, 1, 2], 0)); // [-1, -1]
+
+// // Solution from LeetCode
+// /**
+//  * @param {number[]} nums
+//  * @param {number} target
+//  * @return {number[]}
+//  */
+//  const searchRange = (nums, target) => {
+//   const firstOccurrence = findBound(nums, target, true);
+
+//   if (firstOccurrence === -1) {
+//     return [-1, -1];
+//   }
+
+//   const lastOccurrence = findBound(nums, target, false);
+//   return [firstOccurrence, lastOccurrence];
+//  };
+
+//  const findBound = (nums, target, isFirst) => {
+//   let begin = 0;
+//   let end = nums.length - 1;
+
+//   while (begin <= end) {
+//     let mid = Math.floor((begin + end) / 2);
+
+//     if (nums[mid] === target) {
+//       if (isFirst) {
+
+//         // This means we found our lower bound.
+//         if (mid === begin || nums[mid - 1] !== target) {
+//           return mid;
+//         }
+
+//         end = mid - 1;
+//       } else {
+
+//         // This means we found our upper bound.
+//         if (mid === end || nums[mid + 1] !== target) {
+//           return mid;
+//         }
+
+//         begin = mid + 1;
+//       }
+//     } else {
+//       if (nums[mid] < target) {
+//         begin = mid + 1;
+//       } else {
+//         end = mid - 1;
+//       }
+//     }
+//   }
+
+//   return -1;
+// };
+
+// console.log(searchRange([1, 3, 4, 7, 9], 7)); // [3, 3]
+// console.log(searchRange([1, 1, 2, 2, 3, 3, 3, 3, 3], 1)); // [0, 1]
+// console.log(searchRange([1, 1, 2, 2, 3, 3, 3, 3, 3], 2)); // [2, 3]
+// console.log(searchRange([1, 1, 2, 2, 3, 3, 3, 3, 3], 3)); // [4, 8]
+// console.log(searchRange([1, 2], 1)); // [0, 0]
+// console.log(searchRange([1, 1, 2], 1)); [0, 1]
+// console.log(searchRange([1, 1, 1, 2], 1)); [0, 2]
+// console.log(searchRange([1, 2], 0)); // [-1, -1]
+// console.log(searchRange([1, 1, 2], 0)); // [-1, -1]

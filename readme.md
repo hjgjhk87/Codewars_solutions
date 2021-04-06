@@ -164,6 +164,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	33. Search in Rotated Sorted Array, medium.
 	38. Count and Say, medium.
 	29. Divide Two Integers, medium.
+	34. Find First and Last Position of Element in Sorted Array, medium.
 
 <h3>Python Challenge, Python 3</h3>
 
