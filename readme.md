@@ -166,6 +166,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	29. Divide Two Integers, easy.
 	34. Find First and Last Position of Element in Sorted Array, medium.
 	21. Merge Two Sorted Lists, medium.
+	58. Length of Last Word, easy.
 
 <h3>Python Challenge, Python 3</h3>
 
