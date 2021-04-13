@@ -141,6 +141,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	35. Search Insert Position, easy.
 	33. Search in Rotated Sorted Array, medium.
 	38. Count and Say, medium.
+	66. Plus One, easy.
 
 <h3>LeetCode, JS</h3>
 
@@ -167,6 +168,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	34. Find First and Last Position of Element in Sorted Array, medium.
 	21. Merge Two Sorted Lists, medium.
 	58. Length of Last Word, easy.
+	66. Plus One, easy.
 
 <h3>Python Challenge, Python 3</h3>
 

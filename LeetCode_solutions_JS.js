@@ -1671,6 +1671,7 @@ The number of nodes in both lists is in the range [0, 50].
 Both l1 and l2 are sorted in non-decreasing order.
 */
 
+// My solution
 // // Definition for singly-linked list.
 // function ListNode(val, next) {
 //   this.val = (val === undefined ? 0 : val);
@@ -1749,6 +1750,9 @@ Constraints:
 s consists of only English letters and spaces ' '.
 */
 
+// My solutions
+
+// 1
 // /**
 //  * @param {string} s
 //  * @return {number}
@@ -1758,6 +1762,7 @@ s consists of only English letters and spaces ' '.
 //   return words ? words[words.length - 1].length : 0;
 // };
 
+// 2
 // /**
 //  * @param {string} s
 //  * @return {number}
@@ -1789,3 +1794,69 @@ s consists of only English letters and spaces ' '.
 // console.log(lengthOfLastWord("a ")); // 1
 // console.log(lengthOfLastWord("a aa ")); // 2
 // console.log(lengthOfLastWord("b   a    ")); // 1
+
+////////////////////////////////////////////////////////////////////////////////
+20210412
+
+/*
+66. Plus One
+https://leetcode.com/problems/plus-one/  
+Easy
+
+Given a non-empty array of decimal digits representing a non-negative integer, 
+increment one to the integer.
+
+The digits are stored such that the most significant digit is at the head of the 
+list, and each element in the array contains a single digit.
+
+You may assume the integer does not contain any leading zero, except the number 0 
+itself.
+
+Example 1:  
+Input: digits = [1,2,3]  
+Output: [1,2,4]  
+Explanation: The array represents the integer 123.
+
+Example 2:  
+Input: digits = [4,3,2,1]  
+Output: [4,3,2,2]  
+Explanation: The array represents the integer 4321.
+
+Example 3:  
+Input: digits = [0]  
+Output: [1]  
+ 
+Constraints:  
+1 <= digits.length <= 100  
+0 <= digits[i] <= 9  
+*/
+
+// My solution:
+// /**
+//  * @param {number[]} digits
+//  * @return {number[]}
+//  */
+// const plusOne = function(digits) {
+//   let over = 1;
+
+//   for (let i = digits.length - 1; i >= 0; i--) {
+//     digits[i] = digits[i] + over;
+//     if (digits[i] === 10) {
+//       digits[i] = 0;
+//       over = 1;
+//     } else {
+//       over = 0;
+//     }
+//   }
+
+//   if (over === 1) {
+//     digits.unshift(over);
+//   }
+
+//   return digits;
+// };
+
+// console.log(plusOne([1, 2, 3]));
+// console.log(plusOne([4, 3, 2, 1]));
+// console.log(plusOne([9, 9, 9, 9]));
+// console.log(plusOne([0]));
