@@ -1796,8 +1796,7 @@ s consists of only English letters and spaces ' '.
 // console.log(lengthOfLastWord("b   a    ")); // 1
 
 ////////////////////////////////////////////////////////////////////////////////
-20210412
-
+// 20210412
 /*
 66. Plus One
 https://leetcode.com/problems/plus-one/  
@@ -1860,3 +1859,79 @@ Constraints:
 // console.log(plusOne([4, 3, 2, 1]));
 // console.log(plusOne([9, 9, 9, 9]));
 // console.log(plusOne([0]));
+
+//////////////////////////////////////////////////////////////////////////////
+// 20210414
+/*
+53. Maximum Subarray  
+https://leetcode.com/problems/maximum-subarray/  
+Easy
+
+Given an integer array nums, find the contiguous subarray (containing at least one 
+number) which has the largest sum and return its sum.
+
+Example 1:  
+Input: nums = [-2,1,-3,4,-1,2,1,-5,4]  
+Output: 6  
+Explanation: [4,-1,2,1] has the largest sum = 6.  
+
+Example 2:  
+Input: nums = [1]  
+Output: 1  
+
+Example 3:  
+Input: nums = [5,4,-1,7,8]  
+Output: 23  
+ 
+Constraints:  
+1 <= nums.length <= 3 * 104  
+-105 <= nums[i] <= 105  
+ 
+Follow up: If you have figured out the O(n) solution, try coding another solution 
+using the divide and conquer approach, which is more subtle.
+*/
+
+// // My solution
+// /**
+//  * @param {number[]} nums
+//  * @return {number}
+//  */
+//const maxSubArray = function(nums) {
+//   let sumAll = 0;
+//   let maxAll = 0;
+//   let isAnyNotNegative = false;
+//   let maxNegative = -Infinity;
+
+//   for (let num of nums) {
+//     sumAll += num;
+
+//     // This logic is wrong if all nums are negative
+//     if (sumAll < 0) {
+//       sumAll = 0;
+//     } else {
+//       if (sumAll > maxAll) {
+//         maxAll = sumAll;
+//       }
+//     }
+
+//     if (num < 0) {
+//       if (num > maxNegative) {
+//         maxNegative = num;
+//       }
+//     } else {
+//       isAnyNotNegative = true;
+//     }
+//   }
+
+//   return isAnyNotNegative ? maxAll : maxNegative;
+// };
+
+// console.log(maxSubArray([-2,1,-3,4,-1,2,1,-5,4])); // 6
+// console.log(maxSubArray([1])); // 1
+// console.log(maxSubArray([5,4,-1,7,8])); // 23
+// console.log(maxSubArray([0])); // 0
+// console.log(maxSubArray([-1])); // -1
+// console.log(maxSubArray([-2, -1])); // -1
+// console.log(maxSubArray([-1, -1])); // -1
+// console.log(maxSubArray([-1, -2])); // -1
+// console.log(maxSubArray([-1, -1, 0])); // 0

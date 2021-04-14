@@ -169,6 +169,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	21. Merge Two Sorted Lists, medium.
 	58. Length of Last Word, easy.
 	66. Plus One, easy.
+	53. Maximum Subarray, easy.
 
 <h3>Python Challenge, Python 3</h3>
 
