@@ -142,6 +142,7 @@ This repository contains my (and not only my) solutions for tasks from <a href="
 	33. Search in Rotated Sorted Array, medium.
 	38. Count and Say, medium.
 	66. Plus One, easy.
+	17. Letter Combinations of a Phone Number, medium.
 
 <h3>LeetCode, JS</h3>
 
